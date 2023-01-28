@@ -1,0 +1,87 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// Fontawesome
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+#app {
+    width: 100%;
+    min-height: 100%;
+    background-color: #6c757d;
+
+    .go-home {
+        position: fixed;
+        top: 1rem;
+        left: 1rem;
+        width: 50px;
+        height: 50px;
+        background: orange;
+        color: white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+    }
+
+    table {
+        margin-bottom: 0;
+
+        img {
+            min-height: 100px;
+            max-height: 150px;
+        }
+
+        &.show {
+            width: 100%;
+            background: #e1e1e1;
+
+            tr {
+                width: 100%;
+                border: 2px solid #454d55;
+            }
+            th, td {
+                padding: .5rem 1rem;
+            }
+            th {
+                width: 150px;
+                border-right: 2px solid #454d55;
+                text-transform: capitalize;
+            }
+            td {
+                width: calc(100% - 150px);
+
+                &::first-letter {
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    img {
+        height: 250px;
+        max-width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    form label {
+        color: #e1e1e1;
+
+        &::first-letter {
+            text-transform: uppercase;
+        }
+    }
+}
